@@ -12,6 +12,9 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
+app.MapGet("/health", () => Results.Ok("OK"));
+
+
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
