@@ -1,0 +1,6 @@
+@ReNo.Api_HostAddress = http://localhost:5264
+
+GET {{ReNo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
